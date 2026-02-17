@@ -1,0 +1,13 @@
+edit *package.json*
+--------------------------
+{
+  "name": "personal-finance-tracker-db-ci",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --runInBand",
+    "test:integration": "jest --runInBand --testPathPattern=tests",
+    "migrate": "node src/migrate.js"
+  }
+}
